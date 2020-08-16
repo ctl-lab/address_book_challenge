@@ -22,3 +22,7 @@ describe('user can create a contact', () => {
 // nueva br
 
 // PROBAR UN PULL REQUEST antes de seguir
+
+// bueno, todo lo de arriba me funcionó así que ahora 
+// tiro un ci más antes de arrancar, va a la feature branch 
+// y de ahí seguimos con el proyecto
