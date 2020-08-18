@@ -1,8 +1,30 @@
 describe('user can create a contact', () => {
-    it ('test', () => {
+    beforeEach ('test', () => {
         cy.visit('http://localhost:3001')
+        cy.get('#add-contact').click()
+        cy.get('#name').type('Emi')
+        cy.get('#email').type('thomas@craft.se')
+		cy.get('#phone').type('0700 101010')
+		cy.get('#company').type('Craft Academy')
+		cy.get('#notes').type('Awesome coder')
+        cy.get('#twitter').type('@thomasochman')
+        cy.get('#submit').click()
+    })
+    it ('displays a name of the new contact', () => {
+        cy.get('#contact-list').should('contain', 'Emi')
+    })
+    it ('displays the phone number of the new contact', () => {
+        cy.get('#contact-list').should('contain', '0700 101010')
     })
 })
+
+
+
+
+
+
+
+
 
 // lo ultimo que hice fue hacer que mi 
 // default branch sea master y master está
@@ -22,3 +44,7 @@ describe('user can create a contact', () => {
 // nueva br
 
 // PROBAR UN PULL REQUEST antes de seguir
+
+// bueno, todo lo de arriba me funcionó así que ahora 
+// tiro un ci más antes de arrancar, va a la feature branch 
+// y de ahí seguimos con el proyecto

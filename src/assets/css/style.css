@@ -1,0 +1,33 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(230, 197, 173), rgb(212, 136, 22));
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.big-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+.container-left {
+    margin-right: 20px;
+}
+#submit {
+    margin-top: 10px;
+}
+
+input, #notes, button {
+    border-radius: 6px;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+form label {
+    padding-top: 10px;
+}
